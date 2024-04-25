@@ -11769,7 +11769,6 @@ public function update_collateral(){
 
 //   "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 //    );
-// $sendgrid = new \SendGrid('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');
 //    print_r($sendgrid);
 //  //print_r($massage);
 //         exit();
@@ -11789,9 +11788,6 @@ public function update_collateral(){
       //beem Api
 // function sendsms($phone,$massage){
 //     $message = urlencode($massage);
-//     $sender = 'SEDEMO'; 
-//     $api_key = 'd4af7dff16f3ab47';
-//     $secret_key = 'MjIyNWIwODNmNTNjZTg3OTI2MDBlNGQyYThjNTFjMzAwNmIzMjBhMmJhMGFjNDUxYjRmNmRhOTYxZGY3ZGZiOA==';
     
 // $postData = array(
 //     'source_addr' => 'INFO',
