@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'https://evamo.co.tz/'; 
-// $config['base_url'] = 'http://localhost/eckoo/'; 
+// $config['base_url'] = 'http://localhost/evamo/'; 
 
 /*
 |--------------------------------------------------------------------------
