@@ -980,6 +980,25 @@ $sqldata="UPDATE `tbl_ac_company` SET `comp_balance`= '$total_remain' WHERE  `tr
 	}
 
 
+
+  // public function customer_create()
+  // {
+  //   $this->form_validation->set_rules('comp_id', 'company', 'required');
+  //   $this->form_validation->set_rules('blanch_id', 'blanch', 'required');
+  //   $this->form_validation->set_rules('region_id', 'Region', 'required');
+  //   $this->form_validation->set_rules('f_name', 'first Name', 'required');
+  //   $this->form_validation->set_rules('m_name', 'Middle Name', 'required');
+  //   $this->form_validation->set_rules('l_name', 'Last Name', 'required');
+  //   $this->form_validation->set_rules('gender', 'Gender', 'required');
+  //   $this->form_validation->set_rules('phone_no', 'Phone Number', 'required');
+   
+
+
+
+
+  // }
+
+
 	public function create_customer(){
 		$this->form_validation->set_rules('comp_id','company','required');
 		$this->form_validation->set_rules('blanch_id','blanch','required');
@@ -11769,6 +11788,7 @@ public function update_collateral(){
 
 //   "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 //    );
+// $sendgrid = new \SendGrid('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');
 //    print_r($sendgrid);
 //  //print_r($massage);
 //         exit();
@@ -11788,6 +11808,9 @@ public function update_collateral(){
       //beem Api
 // function sendsms($phone,$massage){
 //     $message = urlencode($massage);
+//     $sender = 'SEDEMO'; 
+//     $api_key = 'd4af7dff16f3ab47';
+//     $secret_key = 'MjIyNWIwODNmNTNjZTg3OTI2MDBlNGQyYThjNTFjMzAwNmIzMjBhMmJhMGFjNDUxYjRmNmRhOTYxZGY3ZGZiOA==';
     
 // $postData = array(
 //     'source_addr' => 'INFO',

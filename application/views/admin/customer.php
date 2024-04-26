@@ -81,16 +81,17 @@
                                 <option value="female">Female</option>
                             </select>
                                 </div>
-                                <div class="col-lg-3 col-6">
+                                <!-- <div class="col-lg-3 col-6">
                                     <span>Date of Birth:</span>
                             <input type="date" name="date_birth" onchange="getDate(this.value)" placeholder="Date of Birth" autocomplete="off" class="form-control input-sm" required>
-                                </div>
-                                <div class="col-lg-4 col-6">
+                                </div> -->
+                                <!-- <div class="col-lg-4 col-6">
                                     <span>Year:</span>
                             <input type="" id="age" name="age" readonly class="form-control input-sm" value="" required>
                             <?php $date = date("Y-m-d"); ?>
                             <input type="hidden" name="reg_date" value="<?php echo $date; ?>">
-                                </div>
+                           
+                                </div> -->
                                     <div class="col-lg-4 col-6">
                                     <span>Phone Number:</span>
                             <input type="number" name="phone_no" placeholder="Eg,7538, 6283" autocomplete="off" class="form-control input-sm" required >
@@ -105,23 +106,23 @@
                             </select>
                                 </div> -->
                                 <input type="hidden" name="region_id" value="1">
-                                    <div class="col-lg-4 col-6">
+                                    <!-- <div class="col-lg-4 col-6">
                                     <span>District:</span>
-                            <input type="text" name="district" placeholder="district" autocomplete="off" class="form-control input-sm" required>
-                                </div>
+                            <input type="text" name="district" placeholder="district" autocomplete="off" class="form-control input-sm" >
+                                </div> -->
                                     <div class="col-lg-6 col-6">
                                     <span>Ward:</span>
-                            <input type="text" name="ward" placeholder="Ward" autocomplete="off" class="form-control input-sm" required>
+                            <input type="text" name="ward" placeholder="Ward" autocomplete="off" class="form-control input-sm" >
                                 </div>
                                         <div class="col-lg-6 col-6">
                                     <span>Street:</span>
-                            <input type="text" name="street" placeholder="street" autocomplete="off" class="form-control input-sm" required>
+                            <input type="text" name="street" placeholder="street" autocomplete="off" class="form-control input-sm" >
                                 </div>
                                 <br>
                                 </div>
                             </div>
                                 <div class="text-center">
-                                <button type="submit" class="btn btn-primary"><i class="icon-pencil">Next</i></button>
+                                <button type="submit" class="btn btn-primary"><i class="icon-pencil">Submit</i></button>
                                 </div>
                             
                             <?php echo form_close();  ?>
