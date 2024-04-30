@@ -119,7 +119,7 @@
                                     <span>Monthly Income:</span>
                             <input type="number"  name="month_income" autocomplete="off" placeholder="Monthly Income" class="form-control input-sm">
                                 </div>
-                                <!-- <input type="hidden" name="customer_id" value="<?php echo $customer->customer_id; ?>"> -->
+                                <input type="hidden" name="customer_id" value="<?php echo $customer->customer_id; ?>"> 
                                 <br>
                                 </div>
                             </div>
