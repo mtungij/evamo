@@ -81,17 +81,17 @@
                                 <option value="female">Female</option>
                             </select>
                                 </div>
-                                <!-- <div class="col-lg-3 col-6">
+                                <div class="col-lg-3 col-6">
                                     <span>Date of Birth:</span>
                             <input type="date" name="date_birth" onchange="getDate(this.value)" placeholder="Date of Birth" autocomplete="off" class="form-control input-sm" required>
-                                </div> -->
-                                <!-- <div class="col-lg-4 col-6">
+                                </div>
+                                <div class="col-lg-4 col-6">
                                     <span>Year:</span>
                             <input type="" id="age" name="age" readonly class="form-control input-sm" value="" required>
                             <?php $date = date("Y-m-d"); ?>
                             <input type="hidden" name="reg_date" value="<?php echo $date; ?>">
                            
-                                </div> -->
+                                </div>
                                     <div class="col-lg-4 col-6">
                                     <span>Phone Number:</span>
                             <input type="number" name="phone_no" placeholder="Eg,7538, 6283" autocomplete="off" class="form-control input-sm" required >
