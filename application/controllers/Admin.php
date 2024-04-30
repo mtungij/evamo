@@ -747,7 +747,7 @@ $sqldata="UPDATE `tbl_ac_company` SET `comp_balance`= '$total_remain' WHERE  `tr
 		$blanch = $this->queries->get_blanch($comp_id);
 		$position = $this->queries->get_position();
 		  //    echo "<pre>";
-		  // print_r($data);
+		  // print_r($all_employee);
 		  //  echo "</pre>";
 		  //      exit();
 		$this->load->view('admin/all_employee',['all_employee'=>$all_employee,'blanch'=>$blanch,'position'=>$position]);

@@ -56,15 +56,15 @@
                             </select>
                                 </div>
 
-                                <!-- <div class="col-lg-3 form-group-sub">
+                                <div class="col-lg-3 form-group-sub">
                                     <label  class="form-control-label">*Position:</label>
                                 <select type="text" name="position_id" class="form-control select2" required>
                                 <option value="">Select Position</option>
-                                <?php //foreach ($position as $positions): ?>
-                                <option value="<?php //echo $positions->position_id; ?>"><?php //echo $positions->position; ?></option>
-                                <?php //endforeach; ?>
+                                <?php foreach ($position as $positions): ?>
+                                <option value="<?php echo $positions->position_id; ?>"><?php echo $positions->position; ?></option>
+                                <?php endforeach; ?>
                             </select>
-                                </div> -->
+                                </div>
                                 <input type="hidden" name="position_id" value="1">
                                 <div class="col-lg-4 form-group-sub">
                                     <label  class="form-control-label">*Username:</label>

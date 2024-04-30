@@ -111,12 +111,16 @@
                             <input type="text" name="district" placeholder="district" autocomplete="off" class="form-control input-sm" >
                                 </div> -->
                                     <div class="col-lg-6 col-6">
+                                    <span>District:</span>
+                                      <input type="text" name="district" placeholder="district" autocomplete="off" class="form-control input-sm" >
+                                </div>
+                                    <div class="col-lg-6 col-6">
                                     <span>Ward:</span>
-                            <input type="text" name="ward" placeholder="Ward" autocomplete="off" class="form-control input-sm" >
+                                      <input type="text" name="ward" placeholder="Ward" autocomplete="off" class="form-control input-sm" >
                                 </div>
                                         <div class="col-lg-6 col-6">
                                     <span>Street:</span>
-                            <input type="text" name="street" placeholder="street" autocomplete="off" class="form-control input-sm" >
+                                  <input type="text" name="street" placeholder="street" autocomplete="off" class="form-control input-sm" >
                                 </div>
                                 <br>
                                 </div>
