@@ -11883,7 +11883,7 @@ public function sendsms($phone,$massage){
 	//public function sendsms(){
 	//$phone = '255628323760';
 	//$massage = 'mapenzi yanauwa';
-	$api_key = 'hnqX1Idsgj3pzbnLo/OzisIuIO';
+	$api_key = 'aBBN2hDNcRsi6CwR';
 	//$api_key = 'qFzd89PXu1e/DuwbwxOE5uUBn6';
 	//$curl = curl_init();
   $ch = curl_init();
