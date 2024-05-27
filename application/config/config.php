@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://evamo.co.tz/'; 
-// $config['base_url'] = 'http://localhost/evamo/'; 
+// $config['base_url'] = 'https://evamo.co.tz/'; 
+$config['base_url'] = 'http://localhost/evamo/'; 
 
 /*
 |--------------------------------------------------------------------------

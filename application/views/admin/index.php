@@ -28,7 +28,7 @@
                         <div class="bh_chart hidden-xs">
                             <div class="float-left m-r-15">
                                 <small><?php echo $account_capitals->account_name; ?></small>
-                                <h6 class="mb-0 mt-1"><i class="icon-wallet"></i><?php echo number_format($account_capitals->comp_balance); ?></h6>
+                                <h6 class="mb-0 mt-1"><i class="icon-wallet"></i><?php echo number_format($account_capitals->comp_balance ?? 0); ?></h6>
                             </div>
                             
                         </div>
@@ -569,19 +569,19 @@
                             <div class="row clearfix">
                                 <div class="col-md-3">
                                     <div class="body bg-success text-light">
-                                        <h4><i class="icon-wallet"></i><?php echo number_format($sum_comp_capital->total_comp_balance); ?></h4>
+                                        <h4><i class="icon-wallet"></i><?php echo number_format($sum_comp_capital->total_comp_balance ?? 0); ?></h4>
                                         <span><?php echo $this->lang->line("main_account_menu"); ?></span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="body bg-warning text-light">
-                                        <h4><i class="icon-wallet"></i><?php echo number_format($principal_loan->loan_aproved); ?></h4>
+                                        <h4><i class="icon-wallet"></i><?php echo number_format($principal_loan->loan_aproved ?? 0); ?></h4>
                                         <span><?php echo $this->lang->line("disburse_loan_menu"); ?></span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="body bg-primary text-light">
-                                        <h4><i class="icon-wallet"></i><?php echo number_format($total_expect->loan_interest); ?></h4>
+                                        <h4><i class="icon-wallet"></i><?php echo number_format($total_expect->loan_interest ?? 0); ?></h4>
                                         <span><?php echo $this->lang->line("expectation_menu"); ?></span>
                                     </div>
                                 </div>
@@ -590,7 +590,7 @@
                                 <?php $loan_out = $this->queries->get_total_outStandcomp($comp_id); ?>
                                 <?php //print_r($loan_out); ?>
                                     <div class="body bg-danger text-light">
-                                        <h4><i class="icon-wallet"></i> <?php echo number_format($loan_out->total_remain); ?></h4>
+                                        <h4><i class="icon-wallet"></i> <?php echo number_format($loan_out->total_remain ?? 0); ?></h4>
                                         <span><?php echo $this->lang->line("outstand_menu"); ?></span>
                                     </div>
                                 </div>
@@ -695,20 +695,20 @@
                                 <tbody>
                                     <tr>
                                         <td class="c">Daily</td>
-                                        <td class="align-right"><span class="badge badge-warning"><?php echo number_format($loan_with_day->total_loanWith_day); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-warning"><?php echo number_format($loan_with_day->total_loanWith_day ?? 0); ?></span></td>
                                     </tr>
 
                                     <tr>
                                         <td class="c">Weekly</td>
-                                        <td class="align-right"><span class="badge badge-info"><?php echo number_format($loan_with_weekly->total_loanWith_weekly); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-info"><?php echo number_format($loan_with_weekly->total_loanWith_weekly ?? 0); ?></span></td>
                                     </tr>
                                     <tr>
                                         <td class="c">Monthly</td>
-                                        <td class="align-right"><span class="badge badge-secondary"><?php echo number_format($loan_with_monthy->total_loanWith_monthly); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-secondary"><?php echo number_format($loan_with_monthy->total_loanWith_monthly ?? 0); ?></span></td>
                                     </tr>
                                     <tr>
                                         <td class="c"><b>TOTAL</b></td>
-                                        <td class="align-right"><b><span class="badge badge-success"><?php echo number_format($ll_loanwith->total_loanWith_all); ?></span></b></td>
+                                        <td class="align-right"><b><span class="badge badge-success"><?php echo number_format($ll_loanwith->total_loanWith_all ?? 0); ?></span></b></td>
                                     </tr>                              
                                 </tbody>
                             </table>
@@ -733,20 +733,20 @@
                                 <tbody>
                                     <tr>
                                         <td class="c">Deducted Income</td>
-                                        <td class="align-right"><span class="badge badge-warning"><?php echo number_format($deducted_balance->total_deducted); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-warning"><?php echo number_format($deducted_balance->total_deducted ?? 0); ?></span></td>
                                     </tr>
 
                                     <tr>
                                         <td class="c">Non -Deducted Income</td>
-                                        <td class="align-right"><span class="badge badge-info"><?php echo number_format($non_balance->total_non); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-info"><?php echo number_format($non_balance->total_non ?? 0); ?></span></td>
                                     </tr>
                                     <tr>
                                         <td class="c"><b>TOTAL INCOME</b></td>
-                                        <td class="align-right"><span class="badge badge-success"><?php echo number_format($deducted_balance->total_deducted + $non_balance->total_non); ?></span></td>
+                                        <td class="align-right"><span class="badge badge-success"><?php echo number_format($deducted_balance->total_deducted + $non_balance->total_non ?? 0); ?></span></td>
                                     </tr>
                                     <tr>
                                         <td class="c">Expenses</td>
-                                        <td class="align-right"><b><span class="badge badge-danger"><?php echo number_format($expenses->total_expenses); ?></span></b></td>
+                                        <td class="align-right"><b><span class="badge badge-danger"><?php echo number_format($expenses->total_expenses ?? 0); ?></span></b></td>
                                     </tr>                              
                                 </tbody>
                             </table>
