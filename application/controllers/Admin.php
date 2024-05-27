@@ -3174,7 +3174,7 @@ public function disburse($loan_id){
       	 //   echo "<br>";
       	 // print_r($res); 
       	 //      exit();
-    	$day = date('Y-m-d H:i');
+    	$day = date('Y-m-d');
     	$day_data = date('Y-m-d H:i');
             $data = array(
             'loan_status'=> 'disbarsed',
@@ -3192,12 +3192,12 @@ public function disburse($loan_id){
 	  $phones = $loan_datas->phone_no;
 
            //send sms function
-         $sms = $comp_name.' Imeingiza Mkopo Kiasi cha Tsh.'.$loan_aproved.' kwenye Acc Yako ' . $loan_codeID .' Kwa msaada zaidi Piga simu Namba '.$comp_phone;
+         $sms = $comp_name.' Imekupitishia Mkopo  Kiasi cha Tsh.'.$loan_aproved.' hivyo unaweza kufika ofisini kwa ajili ya kupatiwa mkopo wako Kwa maelezo zaidi Tupigie simu Namba '.$comp_phone;
          $massage = $sms;
          $phone = $phones;
-               // print_r($massage);
-               //     exit();
-            //Pass user data to model
+            //    print_r($massage);
+            //        exit();
+            // //Pass user data to model
            $this->load->model('queries'); 
             $data = $this->queries->update_status($loan_id,$data);
             
@@ -11883,7 +11883,7 @@ public function sendsms($phone,$massage){
 	//public function sendsms(){
 	//$phone = '255628323760';
 	//$massage = 'mapenzi yanauwa';
-	$api_key = 'aBBN2hDNcRsi6CwR';
+	$api_key = '';
 	//$api_key = 'qFzd89PXu1e/DuwbwxOE5uUBn6';
 	//$curl = curl_init();
   $ch = curl_init();
