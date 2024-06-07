@@ -621,7 +621,7 @@ public function get_allcutomer($comp_id){
 
 
      public function get_loan_active_customer($customer_id){
-     	$data = $this->db->query("SELECT l.loan_id,l.loan_int,l.restration,l.customer_id,ot.loan_stat_date,ot.loan_end_date,l.loan_status,l.day,l.comp_id,l.blanch_id FROM tbl_loans l LEFT JOIN tbl_outstand ot ON ot.loan_id = l.loan_id  WHERE l.customer_id = '$customer_id' ORDER BY l.loan_id DESC LIMIT 1");
+     	$data = $this->db->query("SELECT l.loan_id,l.loan_int,l.restration,l.session ,l.customer_id,ot.loan_stat_date,ot.loan_end_date,l.loan_status,l.day,l.comp_id,l.blanch_id FROM tbl_loans l LEFT JOIN tbl_outstand ot ON ot.loan_id = l.loan_id  WHERE l.customer_id = '$customer_id' ORDER BY l.loan_id DESC LIMIT 1");
      	return $data->row();
      }
 

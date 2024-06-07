@@ -217,7 +217,10 @@
       ?>
          <a href="" class="btn btn-success" data-toggle="modal" data-target="#addcontact2"><i class="icon-pencil">Withdrawal</i></a> 
          <?php }else{ ?>
-         <?php } ?>   
+         <?php } ?>
+             <?php if(@$customer_loan->loan_stat_date): ?>
+                 <a href="<?= site_url('statements/loan_return_statement/'.$customer_loan->customer_id) ?>" class="btn btn-info"><i class="icon-pencil">Loan Schedule</i></a>
+             <?php endif ?>
         <!--  <a href="" class="btn btn-info" data-toggle="modal" data-target="#addcontact3"><i class="icon-pencil">Adjust</i></a> -->    
          </div>
         <div class="table-responsive">

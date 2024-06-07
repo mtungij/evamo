@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /evamo/
+    RewriteBase /mikoposoft/
 
     # Removes index.php from URLs
     RewriteCond %{REQUEST_FILENAME} !-f
